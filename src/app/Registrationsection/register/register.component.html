@@ -3,7 +3,7 @@
         <div class="col-lg-6 col-md-8 col-sm-12 mx-auto px-5" *ngIf="setAvatar">
             <form class="form py-4 shadow-lg mt-4  rounded" #myForm="ngForm" (submit)="HandleSubmit()">
                 <div>
-                    <h6 class="title text-center my-2">Welcome to <span>DARUZ</span> chat</h6>
+                    <h6 class="title text-center my-2">Welcome to <span>Tescode</span> chat</h6>
                     <p class="registerpage"> Register Now and chat's with families and friends </p>
                 </div>
                 <div *ngIf="userPassword?.value!=userConPas.value&&(userPassword?.touched||userPassword?.dirty) &&(userConPas?.touched||userConPas?.dirty) && !userPassword?.errors?.['required'] &&!userConPas?.errors?.['required'] &&!userPassword?.['errors']?.['minlength'] &&!userConPas?.['errors']?.['minlength']"
