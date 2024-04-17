@@ -4,7 +4,7 @@
             <form class="form py-4 shadow-lg mt-4  rounded" #myForm="ngForm" (submit)="HandleSubmit()">
                 <div>
                     <h6 class="title text-center my-2">Welcome to <span>Tescode</span> chat</h6>
-                    <p class="registerpage"> Register Now and chat's with families and friends </p>
+                    <p class="registerpage"> Register Now and chat's with family and friends </p>
                 </div>
                 <div *ngIf="userPassword?.value!=userConPas.value&&(userPassword?.touched||userPassword?.dirty) &&(userConPas?.touched||userConPas?.dirty) && !userPassword?.errors?.['required'] &&!userConPas?.errors?.['required'] &&!userPassword?.['errors']?.['minlength'] &&!userConPas?.['errors']?.['minlength']"
                     class="alert alert-danger">
